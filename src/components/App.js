@@ -1,2 +1,15 @@
-<p>Now I can render any React component on any DOM node I want using ReactDOM.render</p>
+import React from "react";
+import Memo from "./Memo";
+import 'regenerator-runtime/runtime';
 
+const App =()=>{
+ console.log(23);
+
+    return (
+        <><h1>Hii</h1>
+        <Memo />
+        </>
+    );
+}
+
+export default App;
