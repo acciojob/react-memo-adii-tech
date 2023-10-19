@@ -6,7 +6,7 @@ const App =()=>{
  console.log(23);
 
     return (
-        <><h1>Hii</h1>
+        <>
         <Memo />
         </>
     );

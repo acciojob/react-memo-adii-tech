@@ -29,12 +29,12 @@ function Memo() {
   };
 
   return (
-    <div>
+    <div id='main'>
       <h1>Memo</h1>
       <p>Number of todos: {todos.length}</p>
-      <button onClick={handleAddTodo}>Add todo</button>
+      <button onClick={handleAddTodo} id='add-todo-btn'>Add todo</button>
       <br />
-      <button onClick={handleIncrement}>Increment count: {count}</button>
+      <button onClick={handleIncrement} id='incr-cnt'>Increment count: {count}</button>
       <br />
       <form onSubmit={handleMemoSubmit}>
         <label htmlFor="memo">Memo:</label>
@@ -45,7 +45,7 @@ function Memo() {
           onChange={(e) => setMemoText(e.target.value)}
         />
         <br />
-        <button type="submit">Add to list</button>
+        <button type="submit" id='skill-input'>Add to list</button>
       </form>
       <ul>
         {todos.map((todo, index) => (
